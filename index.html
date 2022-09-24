@@ -5,20 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title></title>
+  <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body class="bg-darkBlue flex flex-col justify-center items-center w-screen h-screen">
-  <main class="flex flex-col items-center relative bg-darkGrayishBlue rounded-lg max-w-full mx-3 space-y-6 px-6 pt-10 pb-16">
+  <main class="flex flex-col items-center relative bg-darkGrayishBlue rounded-lg max-w-md mx-3 space-y-6 px-6 pt-10 pb-16 shadow-2xl md:pt-12 md:space-y-8 md:px-8">
     <h1 class="uppercase text-neonGreen text-xs text-center tracking-[0.2em]">Advice #000</h1>
     <blockquote class="text-center text-lightCyan text-2xl font-extrabold">
       &ldquo;It is easy to sit up and take notice, what's difficult is getting up and taking action.&rdquo;
     </blockquote>
-    <img src="images/pattern-divider-mobile.svg" alt="divider">
-    <button class="flex flex-row justify-center items-center absolute inset-x-auto -bottom-8 bg-neonGreen rounded-full w-16 h-16"><img src="images/icon-dice.svg" alt="Dice Icon"></button>
+    <div class="bg-[url('../images/pattern-divider-mobile.svg')] bg-no-repeat bg-center bg-auto w-full h-6 md:bg-[url('../images/pattern-divider-desktop.svg')]" aria-hidden="true">
+      <!-- empty div with bg that acts as divider-->
+    </div>
+    <button class="flex flex-row justify-center items-center absolute inset-x-auto -bottom-8 bg-neonGreen rounded-full w-16 h-16 hover:shadow-[0_0_50px_0px_rgba(0,0,0,0.25)] hover:shadow-neonGreen"><img src="images/icon-dice.svg" alt="Dice Icon"></button>
   </main>
+  <footer class="absolute bottom-4 inset-x-auto text-grayishBlue text-sm">
+    <div>
+    Challenge by <a class="underline text-lightCyan" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline text-lightCyan" href="#">Jordan Kisiel</a>.
+    </div>
+  </footer>
+  
 </body>
 </html>
