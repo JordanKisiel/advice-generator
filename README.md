@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jordankisiel.github.io/advice-generator/](https://jordankisiel.github.io/advice-generator/)
 
 ## My process
 
