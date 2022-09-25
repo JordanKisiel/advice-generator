@@ -30,17 +30,17 @@ function getAdvice(){
 
             adviceID.innerHTML = id;
             adviceContainer.innerHTML = `&ldquo;${advice}&rdquo;`;
+
+            //disable button for 2.1 secs so that the user doesn't
+            //click too fast and get the same advice again as the
+            //request is cached for 2 secs and won't give new advice
+            //before then
+            disableButton();
+            setTimeout(enableButton, 2100);
         })
         .catch(error => {
             console.log('There was an unexpected problem getting the data: ', error);
         });
-
-    //disable button for 2.1 secs so that the user doesn't
-    //click too fast and get the same advice again as the
-    //request is cached for 2 secs and won't give new advice
-    //before then
-    disableButton();
-    setTimeout(enableButton, 2100);
 }
 
 
